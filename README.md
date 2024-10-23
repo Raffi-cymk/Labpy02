@@ -260,7 +260,8 @@ Hasil Evaluasi:
 Nama    :   Raffi
 
 20
-python code
+
+Python code
 
 6. Penanganan Kesalahan (Error Handling)
 
