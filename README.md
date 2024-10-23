@@ -129,3 +129,156 @@ print(f"Harga Diskon\t:\t{'Ya' if kartu_member else 'Tidak'}")
 
 # Menampilkan output
 print(f"\nTotal Harga\t:\trp.{int(total_harga)}")
+
+---
+
+# Program Kalkulator Sederhana
+
+def kalkulator(angka_pertama, angka_kedua, operator):
+    if operator == "+":
+        return angka_pertama + angka_kedua
+    elif operator == "-":
+        return angka_pertama - angka_kedua
+    elif operator == "*":
+        return angka_pertama * angka_kedua
+    elif operator == "/":
+        if angka_kedua != 0:
+            return angka_pertama / angka_kedua
+        else:
+            return "Error: Pembagian dengan nol!"
+    else:
+        return "Error: Operator tidak dikenali!"
+
+# Input data user  
+nama_user = input("Masukkan Nama Anda:")  
+
+# Operasi aritmatika   
+operasi_aritmatika = input("Operasi Arimatika (+,- ,*,/) ?: ").lower()   
+
+# Angka pertama dan kedua    
+try :
+     angka_pertama=int(input("Angka Pertama ?: "))     
+     angka_kedua= int(input("Angka Kedua ?: "))
+except ValueError :
+      print ('Mohon Masukkan Bilangan Bulat')
+      
+# Fungsi kalkulator digunakan untuk menghitung hasil operasi aritmatika   
+hasil_operasi=kalkulator(angka_pertama ,angka_kedua ,operasi_aritmatika )    
+
+print('\n Hasil Evaluasi:')    
+print(f'Nama\t:\t{nama_user}')    
+    
+if isinstance(hasil_operasi, str):       
+       print(f' Error: {hasil_operasi} ')
+else :          
+      print(f'\n {hasil_operasi}')   
+---
+
+Berikut adalah penjelasan lengkap dari Program Kalkulator Sederhana yang Anda buat:
+
+1. Fungsi kalkulator(angka_pertama, angka_kedua, operator)
+
+Fungsi ini bertugas untuk menghitung operasi aritmatika berdasarkan dua angka yang diberikan dan operator yang dipilih.
+
+Penjelasan fungsi:
+
+Parameter angka_pertama: Input berupa bilangan bulat dari pengguna.
+
+Parameter angka_kedua: Input berupa bilangan bulat dari pengguna.
+
+Parameter operator: Input berupa operator aritmatika yang akan digunakan dalam operasi, seperti penjumlahan (+), pengurangan (-), perkalian (*), atau pembagian (/).
+
+
+Logika dalam fungsi:
+
+Jika operator adalah +, maka akan melakukan penjumlahan antara angka_pertama dan angka_kedua.
+
+Jika operator adalah -, maka akan melakukan pengurangan.
+
+Jika operator adalah *, maka akan melakukan perkalian.
+
+Jika operator adalah /, program memeriksa apakah angka_kedua tidak sama dengan nol untuk menghindari kesalahan pembagian dengan nol. Jika angka_kedua == 0, program mengembalikan pesan error, "Error: Pembagian dengan nol!".
+
+Jika operator yang dimasukkan tidak dikenali (selain +, -, *, atau /), program mengembalikan pesan "Error: Operator tidak dikenali!".
+
+
+2. Input Data Pengguna
+
+Bagian ini bertugas untuk mengambil input dari pengguna:
+
+Nama pengguna (nama_user): Mengambil nama pengguna yang dimasukkan melalui fungsi input().
+
+Operator aritmatika (operasi_aritmatika): Meminta pengguna memasukkan operasi aritmatika yang ingin dilakukan. Input ini diubah menjadi huruf kecil dengan .lower() untuk memastikan input konsisten dalam proses pengecekan.
+
+Angka pertama dan angka kedua (angka_pertama, angka_kedua): Meminta pengguna untuk memasukkan dua angka yang akan digunakan dalam operasi aritmatika. Input ini dicoba dikonversi menjadi bilangan bulat menggunakan int().
+
+
+Penanganan Error:
+
+Bagian ini menggunakan blok try-except untuk menangani kesalahan apabila pengguna memasukkan nilai yang bukan bilangan bulat:
+
+Jika pengguna memasukkan nilai yang tidak bisa dikonversi menjadi integer, program akan menampilkan pesan "Mohon Masukkan Bilangan Bulat" dan mencegah program berhenti dengan error.
+
+
+3. Pemanggilan Fungsi kalkulator()
+
+Setelah input dari pengguna diperoleh dan divalidasi, program memanggil fungsi kalkulator() dengan parameter:
+
+angka_pertama: angka pertama yang dimasukkan oleh pengguna.
+
+angka_kedua: angka kedua yang dimasukkan oleh pengguna.
+
+operasi_aritmatika: operator yang dipilih oleh pengguna.
+
+
+Hasil dari operasi ini disimpan dalam variabel hasil_operasi.
+
+4. Menampilkan Output
+
+Program kemudian menampilkan hasil evaluasi dengan format sebagai berikut:
+
+Nama pengguna: Menampilkan nama yang dimasukkan oleh pengguna.
+
+Hasil operasi: Program mengecek tipe dari hasil_operasi. Jika tipe data adalah string, ini berarti ada kesalahan (seperti pembagian dengan nol atau operator yang tidak dikenali), sehingga akan mencetak pesan kesalahan yang telah disiapkan di fungsi kalkulator().
+
+
+Jika tidak ada kesalahan (hasil operasi berupa angka), maka program akan menampilkan hasil perhitungan operasi aritmatika.
+
+5. Contoh Eksekusi Program
+
+Contoh Input:
+
+Masukkan Nama Anda: Raffi
+Operasi Arimatika (+,- ,*,/) ?: *
+Angka Pertama ?: 5
+Angka Kedua ?: 4
+python code
+
+Contoh Output:
+
+Hasil Evaluasi:
+Nama    :   Raffi
+
+20
+python code
+
+6. Penanganan Kesalahan (Error Handling)
+
+Jika pengguna memasukkan operator yang tidak valid (misalnya %), program akan mengembalikan error:
+
+Error: Operator tidak dikenali!
+python code
+
+Jika pengguna mencoba membagi dengan nol:
+
+Error: Pembagian dengan nol!
+Python code
+
+Jika pengguna memasukkan angka yang bukan bilangan bulat:
+
+Mohon Masukkan Bilangan Bulat
+python code
+
+Kesimpulan:
+
+Program kalkulator ini memudahkan pengguna untuk melakukan operasi aritmatika dasar (penjumlahan, pengurangan, perkalian, dan pembagian) dengan penanganan kesalahan yang cukup baik.
