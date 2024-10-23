@@ -30,12 +30,14 @@ Logika fungsi:
 Pertama, program mengecek apakah tipe tiket adalah 'reguler' atau 'vip' dengan operator ternary, yaitu:
 
 harga_tiket = harga_reguler if tipe_tiket == 'reguler' else harga_vip
+Python code
 
 Jika tipe_tiket adalah 'reguler', maka harga_tiket akan menjadi Rp 50.000, sebaliknya jika 'vip', maka harga_tiket adalah Rp 100.000.
 
 Kemudian program mengecek apakah pengguna memiliki kartu member:
 
 total_harga = harga_tiket * 0.8 if kartu_member else harga_tiket
+python code
 
 Jika kartu_member bernilai True, maka harga tiket akan dikalikan 0.8 untuk menerapkan diskon. Jika tidak, harga tetap.
 
@@ -75,6 +77,7 @@ Contoh Input:
 Masukkan Nama Anda: Budi
 Masukkan Jenis Tiket ('reguler'/'vip'): vip
 Apakah Anda memiliki Kartu Member? (yes/no): yes
+python code
 
 Contoh Output:
 
@@ -82,6 +85,7 @@ Hasil Evaluasi:
 Nama        :   Budi
 Tipe Tiket  :   Vip
 Harga Diskon:   Ya
+python code
 
 Total Harga :   rp.80000
 
