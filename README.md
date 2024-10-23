@@ -30,6 +30,7 @@ Logika fungsi:
 Pertama, program mengecek apakah tipe tiket adalah 'reguler' atau 'vip' dengan operator ternary, yaitu:
 
 harga_tiket = harga_reguler if tipe_tiket == 'reguler' else harga_vip
+
 Python code
 
 Jika tipe_tiket adalah 'reguler', maka harga_tiket akan menjadi Rp 50.000, sebaliknya jika 'vip', maka harga_tiket adalah Rp 100.000.
