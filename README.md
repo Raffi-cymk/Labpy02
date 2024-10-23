@@ -252,7 +252,8 @@ Masukkan Nama Anda: Raffi
 Operasi Arimatika (+,- ,*,/) ?: *
 Angka Pertama ?: 5
 Angka Kedua ?: 4
-python code
+
+Python code ↑
 
 Contoh Output:
 
@@ -261,24 +262,27 @@ Nama    :   Raffi
 
 20
 
-Python code
+Python code ↑
 
 6. Penanganan Kesalahan (Error Handling)
 
 Jika pengguna memasukkan operator yang tidak valid (misalnya %), program akan mengembalikan error:
 
 Error: Operator tidak dikenali!
-python code
+
+Python code ↑
 
 Jika pengguna mencoba membagi dengan nol:
 
 Error: Pembagian dengan nol!
-Python code
+
+Python code ↑
 
 Jika pengguna memasukkan angka yang bukan bilangan bulat:
 
 Mohon Masukkan Bilangan Bulat
-python code
+
+Python code ↑
 
 Kesimpulan:
 
