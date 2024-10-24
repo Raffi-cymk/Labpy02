@@ -252,7 +252,9 @@ Contoh Input:
 Masukkan Nama Anda: Raffi
 
 Operasi Arimatika (+,- ,*,/) ?: * 
+
 Angka Pertama ?: 5
+
 Angka Kedua ?: 4
 
 Python code ↑
