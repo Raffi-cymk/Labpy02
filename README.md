@@ -3,7 +3,6 @@
 
 ![](<Blank diagram.png>)
 
-Penjelasan:
 Berikut adalah penjelasan lengkap dari program Pemesanan Tiket Bioskop:
 
 1. Fungsi hitung_harga_tiket(tipe_tiket, kartu_member)
