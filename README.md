@@ -1,7 +1,7 @@
 # Labpy02
 # Program Pemesanan Tiket Bioskop
 
-
+![](<Blank diagram.png>)
 
 Penjelasan:
 Berikut adalah penjelasan lengkap dari program Pemesanan Tiket Bioskop:
