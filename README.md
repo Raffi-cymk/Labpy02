@@ -250,6 +250,7 @@ Jika tidak ada kesalahan (hasil operasi berupa angka), maka program akan menampi
 Contoh Input:
 
 Masukkan Nama Anda: Raffi
+
 Operasi Arimatika (+,- ,*,/) ?: * 
 Angka Pertama ?: 5
 Angka Kedua ?: 4
