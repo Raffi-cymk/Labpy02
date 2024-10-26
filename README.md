@@ -135,7 +135,7 @@ print(f"\nTotal Harga\t:\trp.{int(total_harga)}")
 
 # Program Kalkulator Sederhana
 
-![](Algorithm flowchart example.png>)
+![](<Algorithm flowchart example.png>)
 
 def kalkulator(angka_pertama, angka_kedua, operator):
     if operator == "+":
